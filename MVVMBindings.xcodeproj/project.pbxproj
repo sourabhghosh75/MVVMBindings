@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		F52C4D0D2792D36D00CC0174 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C4D0C2792D36D00CC0174 /* AppDelegate.swift */; };
 		F52C4D0F2792D36D00CC0174 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C4D0E2792D36D00CC0174 /* SceneDelegate.swift */; };
-		F52C4D112792D36D00CC0174 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C4D102792D36D00CC0174 /* ViewController.swift */; };
 		F52C4D142792D36D00CC0174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52C4D122792D36D00CC0174 /* Main.storyboard */; };
 		F52C4D162792D36E00CC0174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52C4D152792D36E00CC0174 /* Assets.xcassets */; };
 		F52C4D192792D36E00CC0174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52C4D172792D36E00CC0174 /* LaunchScreen.storyboard */; };
+		F52C4D222792D3D900CC0174 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C4D212792D3D900CC0174 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F52C4D092792D36D00CC0174 /* MVVMBindings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMBindings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52C4D0C2792D36D00CC0174 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F52C4D0E2792D36D00CC0174 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F52C4D102792D36D00CC0174 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F52C4D132792D36D00CC0174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F52C4D152792D36E00CC0174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F52C4D182792D36E00CC0174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F52C4D1A2792D36E00CC0174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52C4D212792D3D900CC0174 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,23 @@
 		F52C4D0B2792D36D00CC0174 /* MVVMBindings */ = {
 			isa = PBXGroup;
 			children = (
+				F52C4D202792D38800CC0174 /* Controllers */,
 				F52C4D0C2792D36D00CC0174 /* AppDelegate.swift */,
 				F52C4D0E2792D36D00CC0174 /* SceneDelegate.swift */,
-				F52C4D102792D36D00CC0174 /* ViewController.swift */,
 				F52C4D122792D36D00CC0174 /* Main.storyboard */,
 				F52C4D152792D36E00CC0174 /* Assets.xcassets */,
 				F52C4D172792D36E00CC0174 /* LaunchScreen.storyboard */,
 				F52C4D1A2792D36E00CC0174 /* Info.plist */,
 			);
 			path = MVVMBindings;
+			sourceTree = "<group>";
+		};
+		F52C4D202792D38800CC0174 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F52C4D212792D3D900CC0174 /* LoginViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52C4D112792D36D00CC0174 /* ViewController.swift in Sources */,
+				F52C4D222792D3D900CC0174 /* LoginViewController.swift in Sources */,
 				F52C4D0D2792D36D00CC0174 /* AppDelegate.swift in Sources */,
 				F52C4D0F2792D36D00CC0174 /* SceneDelegate.swift in Sources */,
 			);

@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameTxt: BindingTextField!{
         didSet {
             usernameTxt.bind { [weak self] text  in
-                self?.loginViewModel.username = text
+                self?.loginViewModel.username.value = text
                
             }
         }
@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
         didSet {
             passwordTxt.bind { [weak self] text  in
                
-                self?.loginViewModel.password = text
+                self?.loginViewModel.password.value = text
             }
         }
     }
@@ -32,16 +32,38 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        loginViewModel.username.bind {[weak self] text in
+            
+            self?.usernameTxt.text = text
+        }
+        
+        loginViewModel.password.bind {[weak self] text in
+            
+            self?.passwordTxt.text = text
+        }
     }
     
 
     @IBAction func pressedLogin(_ sender: UIButton) {
         
         
-        print(loginViewModel.username)
-        print(loginViewModel.password)
+        print(loginViewModel.username.value)
+        print(loginViewModel.password.value)
     }
+    
+    
+    @IBAction func pressedLoginInfo(_ sender: UIButton) {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
+            
+            self?.loginViewModel.username.value = "Pran"
+            self?.loginViewModel.password.value = "password"
+        }
+        
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 

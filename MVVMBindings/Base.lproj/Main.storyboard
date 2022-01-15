@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="8Nb-hX-bmL">
-                                <rect key="frame" x="69" y="347.5" width="276" height="211.5"/>
+                                <rect key="frame" x="69" y="301.5" width="276" height="303"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQL-rw-oMH" customClass="BindingTextField" customModule="MVVMBindings" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="276" height="34"/>
@@ -43,6 +43,17 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="pressedLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QYe-sr-Lin"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkm-M2-D2h">
+                                        <rect key="frame" x="0.0" y="263.5" width="276" height="39.5"/>
+                                        <color key="backgroundColor" red="0.72514780966314718" green="0.94635239949209837" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Fetch Login Info">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="pressedLoginInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xD9-7h-cH6"/>
                                         </connections>
                                     </button>
                                 </subviews>

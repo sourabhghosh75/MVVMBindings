@@ -9,9 +9,25 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var usernameTxt: UITextField!
+    private var loginViewModel = LoginViewModel()
     
-    @IBOutlet weak var passwordTxt: UITextField!
+    @IBOutlet weak var usernameTxt: BindingTextField!{
+        didSet {
+            usernameTxt.bind { [weak self] text  in
+                self?.loginViewModel.username = text
+               
+            }
+        }
+    }
+    
+    @IBOutlet weak var passwordTxt: BindingTextField!{
+        didSet {
+            passwordTxt.bind { [weak self] text  in
+               
+                self?.loginViewModel.password = text
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +37,10 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func pressedLogin(_ sender: UIButton) {
+        
+        
+        print(loginViewModel.username)
+        print(loginViewModel.password)
     }
     /*
     // MARK: - Navigation

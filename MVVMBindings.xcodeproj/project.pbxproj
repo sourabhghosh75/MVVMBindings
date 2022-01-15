@@ -13,6 +13,8 @@
 		F52C4D162792D36E00CC0174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52C4D152792D36E00CC0174 /* Assets.xcassets */; };
 		F52C4D192792D36E00CC0174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52C4D172792D36E00CC0174 /* LaunchScreen.storyboard */; };
 		F52C4D222792D3D900CC0174 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C4D212792D3D900CC0174 /* LoginViewController.swift */; };
+		F52C4D252792DD9700CC0174 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C4D242792DD9700CC0174 /* LoginViewModel.swift */; };
+		F52C4D282792DE2400CC0174 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C4D272792DE2400CC0174 /* BindingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F52C4D182792D36E00CC0174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F52C4D1A2792D36E00CC0174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F52C4D212792D3D900CC0174 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F52C4D242792DD9700CC0174 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F52C4D272792DE2400CC0174 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		F52C4D0B2792D36D00CC0174 /* MVVMBindings */ = {
 			isa = PBXGroup;
 			children = (
+				F52C4D262792DE0100CC0174 /* Custom Views */,
+				F52C4D232792DD7800CC0174 /* View Models */,
 				F52C4D202792D38800CC0174 /* Controllers */,
 				F52C4D0C2792D36D00CC0174 /* AppDelegate.swift */,
 				F52C4D0E2792D36D00CC0174 /* SceneDelegate.swift */,
@@ -73,6 +79,22 @@
 				F52C4D212792D3D900CC0174 /* LoginViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F52C4D232792DD7800CC0174 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				F52C4D242792DD9700CC0174 /* LoginViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		F52C4D262792DE0100CC0174 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				F52C4D272792DE2400CC0174 /* BindingTextField.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52C4D252792DD9700CC0174 /* LoginViewModel.swift in Sources */,
 				F52C4D222792D3D900CC0174 /* LoginViewController.swift in Sources */,
+				F52C4D282792DE2400CC0174 /* BindingTextField.swift in Sources */,
 				F52C4D0D2792D36D00CC0174 /* AppDelegate.swift in Sources */,
 				F52C4D0F2792D36D00CC0174 /* SceneDelegate.swift in Sources */,
 			);
